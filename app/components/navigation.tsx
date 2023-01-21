@@ -20,14 +20,14 @@ function Navigation() {
         </Link>
         <Hamburger onClick={onHamburgerClick} isOpen={isOpen} />
         <div
-          className={clsx("absolute border border-black top-9 right-4 px-4 rounded flex flex-col", {
+          className={clsx("absolute border border-black top-9 right-4 px-4 rounded flex flex-col bg-slate-200", {
             hidden: !isOpen,
           })}
         >
           <Link href={"/"} className="block text-right py-2 font-semibold text-xs" onClick={()=>{setIsOpen(!isOpen)}}>
             Home
           </Link>
-          <Link href={"/shop"} className="block text-right py-2 font-semibold text-xs" onClick={()=>{setIsOpen(!isOpen)}}>
+          <Link href={"/shop/clothing"} className="block text-right py-2 font-semibold text-xs" onClick={()=>{setIsOpen(!isOpen)}}>
             Shop
           </Link>
           <Link href={"/help"} className="block text-right py-2 font-semibold text-xs" onClick={()=>{setIsOpen(!isOpen)}}>
