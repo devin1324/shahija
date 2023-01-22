@@ -2,7 +2,6 @@ import Link from "next/link";
 import clsx from "clsx";
 
 function CategoryNav({ segment }: { segment: string }) {
-  console.log(segment);
 
   return (
     <div className="border border-black grid mt-4 grid-cols-4 rounded">
