@@ -18,7 +18,7 @@ function Navigation() {
         <Link href={"/signup"} className="text-xs border block border-black px-1 py-1 rounded">
           Sign Up
         </Link>
-        <Hamburger onClick={onHamburgerClick} isOpen={isOpen} />
+        <Hamburger onClick={onHamburgerClick} isOpen={isOpen} />    
         <div
           className={clsx("absolute border border-black top-9 right-4 px-4 rounded flex flex-col bg-slate-2`00", {
             hidden: !isOpen,
